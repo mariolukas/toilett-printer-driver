@@ -308,7 +308,7 @@ unsigned char font[2048] =
  /*Pen Specs (Pilot G1 0.5)*/ 
  int letter_width = 40;
  int line_break = 10;
- int line_hight = 5;
+ int line_height = 5;
   
   int pos;
   int txt_pos = 0;
@@ -506,7 +506,7 @@ void printLine(int txt_length){
      do_pen(UP);
      pen=false;
      old_pen=false;
-     stepper.step(FRONT_STEPPER,line_hight,FORWARD); 
+     stepper.step(FRONT_STEPPER,line_height,FORWARD); 
     
    
    }//for zl
